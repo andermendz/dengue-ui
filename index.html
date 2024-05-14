@@ -12,16 +12,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Fauna+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    <title>Digital Ascend</title>
+    <title>DengueAI</title>
 </head>
 <body>
     <!-- HTML -->
     <section class="hero">
         <div class="container">
             <img src="./img/banner.jpg" alt="" class="bg-image">
-            <h1>Digital Ascend</h1>
+            <h1>Dengue</h1>
             <p>
-                Crafting Digital Excellence for Lasting Impressions.
+                cómo una pequeña amenaza se convirtió en crisis global.
             </p>
         </div>
         <div class="mouse-scroll"></div>
@@ -75,64 +75,87 @@
     </section>
 
     <section class="projects">
-        <div class="container">
-            <div class="column">
-                <h2>Our Projects</h2>
-                <p>
-                    Our portfolio is a testament to the dynamic solutions we've crafted for our clients.
-                </p>
-                <div class="image">
-                    <img src="./img/project1.jpg" alt="image">
-                </div>
-                <p>
-                    Explore these snapshots of success, where collaboation and creativity coverge to shape compelling narratives and deliver tangible results.
-                </p>
-                <a href="#" class="btn">Learn More</a>
-            </div>
-
-            <div class="column">
-                <div class="image"><img src="./img/project2.jpg"></div>
-                <div class="image"><img src="./img/project3.jpg"></div>
-            </div>
-        </div>
+       
     </section>
 
     <footer>
         <div class="container">
-            <h2>Let's Talk</h2>
-            <p>
-                Ready to take the leap? Our team at DigitalAscend is eager to collaborate with you.
-            </p>
-            <a href="#" class="btn">Write Message</a>
-            <div class="social-media">
-                <a href="#">
-                    <div>
-                        <h3>Behance</h3>
-                        <p>@digital_ascend</p>
+            <div class="content-wrapper">
+              <div class="form-container">
+                <div class="form-card">
+                  <form id="predictionForm">
+                    <div class="form-group">
+                      <label for="edad">Edad:</label>
+                      <input type="number" id="edad" name="edad" min="1" max="99" required>
                     </div>
-                    <i class="fab fa-behance"></i>
-                </a>
-
-                <a href="#">
-                    <div>
-                        <h3>Dribble</h3>
-                        <p>@digital_ascend</p>
+                    <div class="form-group">
+                      <label for="sexo">Sexo:</label>
+                      <select id="sexo" name="sexo">
+                        <option value="M">Masculino</option>
+                        <option value="F">Femenino</option>
+                      </select>
                     </div>
-                    <i class="fab fa-dribbble"></i>
-                </a>
-
-                <a href="#">
-                    <div>
-                        <h3>Instagram</h3>
-                        <p>@digital_ascend</p>
+                    <div class="form-group">
+                      <label>Síntomas:</label>
+                      <div class="checkbox-group">
+                        <div>
+                          <input type="checkbox" id="fiebre" name="fiebre" value="1">
+                          <label for="fiebre">Fiebre</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="cefalea" name="cefalea" value="1">
+                          <label for="cefalea">Dolor de cabeza</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="dolrretroo" name="dolrretroo" value="1">
+                          <label for="dolrretroo">Dolor detrás de los ojos</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="malgias" name="malgias" value="1">
+                          <label for="malgias">Dolores musculares</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="artralgia" name="artralgia" value="1">
+                          <label for="artralgia">Dolor en las articulaciones</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="erupcionr" name="erupcionr" value="1">
+                          <label for="erupcionr">Erupción cutánea</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="dolor_abdo" name="dolor_abdo" value="1">
+                          <label for="dolor_abdo">Dolor abdominal</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="vomito" name="vomito" value="1">
+                          <label for="vomito">Vomito</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="dirrea" name="dirrea" value="1">
+                          <label for="dirrea">Diarrea</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="hipotensio" name="hipotensio" value="1">
+                          <label for="hipotensio">Hipotension</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="hepatomeg" name="hepatomeg" value="1">
+                          <label for="hepatomeg">Hepatomegalia</label>
+                        </div>
+                      </div>
                     </div>
-                    <i class="fab fa-instagram"></i>
-                </a>
+                    <button type="submit">Send</button>
+                  </form>
+                </div>
+              </div>
+              <div class="content">
+                <h1>Detecta la gravedad del paciente, <span>a partir de los sintomas</span></h1>
+                <p id="aianswer">Utilizando Inteligencia Artificial Generativa</p>
+              </div>
             </div>
-            <p>&copy; All Rights Reserved - Company.</p>
-        </div>
+          </div>
     </footer>
-
+  
 
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
