@@ -1,3 +1,7 @@
 # Modern Landing Page
 
-![Video_Demo](./Preview.mp4)
+## Video Demo
+
+[![Video Demo Thumbnail](thumbnail.png)](https://github.com/king-luvaha/Agency-Landing-Page/blob/main/Preview.mp4)
+
+
