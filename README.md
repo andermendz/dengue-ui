@@ -1,3 +1,3 @@
 # Modern Landing Page
 
-![Preview Video](Preview.mp4)
+![Preview Video](/Preview.mp4)
